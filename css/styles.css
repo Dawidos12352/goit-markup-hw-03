@@ -12,9 +12,13 @@ body {
   color: var(--brand-color3);
   font-size: 14px;
   letter-spacing: 0.03em;
+  background-color: red;
 }
 ul {
   list-style: none;
+}
+.header {
+  border-bottom: #ececec solid 1px;
 }
 .logo {
   font-family: "raleway";
@@ -127,6 +131,11 @@ button:active {
 .advantage__subtitle {
   line-height: 1.71;
   color: var(--brand-color1);
+}
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .section__header {
   font-weight: 700;
