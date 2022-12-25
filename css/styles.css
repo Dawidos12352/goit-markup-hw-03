@@ -12,13 +12,26 @@ body {
   color: var(--brand-color3);
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: red;
+  width: 1600px;
 }
 ul {
   list-style: none;
 }
+main {
+  width: inherit;
+}
 .header {
   border-bottom: #ececec solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  width: inherit;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .logo {
   font-family: "raleway";
@@ -26,6 +39,7 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: var(--active-color);
+  margin-left: 216px;
 }
 .header__logo {
   color: var(--logo-color);
@@ -35,7 +49,27 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row;
+  margin-left: 92px;
+  padding-inline-start: 0px;
 }
+.header__menu > li:not(:last-child) {
+  margin-right: 46px;
+}
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+  margin-right: 227px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 0px;
+}
+.header__contacts > li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header__contacts-item {
   color: var(--brand-color1);
 }
@@ -104,6 +138,12 @@ button:active {
 }
 .banner {
   background-color: var(--background-color);
+  display: flex;
+  height: 600px;
+  width: inherit;
+  flex-direction: column;
+
+  align-items: center;
 }
 .banner__title {
   font-weight: 900;
@@ -124,6 +164,12 @@ button:active {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .advantage__title {
   font-weight: 700;
   text-transform: uppercase;
@@ -131,11 +177,6 @@ button:active {
 .advantage__subtitle {
   line-height: 1.71;
   color: var(--brand-color1);
-}
-.test {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .section__header {
   font-weight: 700;
@@ -160,4 +201,11 @@ button:active {
 }
 .card__subtitle {
   color: var(--brand-color1);
+}
+.container {
+  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
