@@ -13,25 +13,30 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 ul {
   list-style: none;
 }
 main {
-  width: inherit;
+}
+.section {
+  padding: 94px 0px 94px 0px;
 }
 .header {
   border-bottom: #ececec solid 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 80px;
-  width: inherit;
 }
 .header__nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+.header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .logo {
   font-family: "raleway";
@@ -39,7 +44,6 @@ main {
   font-size: 26px;
   line-height: 1.19;
   color: var(--active-color);
-  margin-left: 216px;
 }
 .header__logo {
   color: var(--logo-color);
@@ -51,8 +55,14 @@ main {
   letter-spacing: 0.02em;
   display: flex;
   flex-direction: row;
-  margin-left: 92px;
   padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding: 32px 0px 32px 0px;
+}
+.logo__container {
+  padding: 24px 0px 25px 0px;
+  margin-right: 93px;
 }
 .header__menu > li:not(:last-child) {
   margin-right: 46px;
@@ -60,10 +70,9 @@ main {
 .header__contacts {
   display: flex;
   flex-direction: row;
-  margin-right: 227px;
-  align-content: center;
-  display: flex;
-  justify-content: center;
+  padding-inline-start: 0px;
+  padding: 32px 0px 32px 0px;
+  margin-block-start: 0px;
   margin-block-end: 0px;
 }
 .header__contacts > li:not(:last-child) {
@@ -138,12 +147,12 @@ button:active {
 }
 .banner {
   background-color: var(--background-color);
+  width: 1600px;
   display: flex;
-  height: 600px;
-  width: inherit;
   flex-direction: column;
-
+  justify-content: center;
   align-items: center;
+  padding: 200px 452px 200px 452px;
 }
 .banner__title {
   font-weight: 900;
@@ -153,40 +162,82 @@ button:active {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-color2);
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 30px;
 }
+
 .banner__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 41px 10px 42px;
 }
-.advantage {
+.advantages {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.advantage:not(:last-child) {
+  margin-right: 30px;
 }
 .advantage__title {
   font-weight: 700;
   text-transform: uppercase;
+  margin-block-start: 0px;
+  margin-block-end: 10px;
 }
 .advantage__subtitle {
   line-height: 1.71;
   color: var(--brand-color1);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 .section__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  padding-top: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   text-align: center;
+}
+.offices__container {
+  padding-top: 0px;
+}
+.offices {
+  display: flex;
+  flex-direction: row;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 50px;
+}
+.office:not(:last-child) {
+  margin-right: 30px;
 }
 .section__cards {
   background: #f5f4fa;
+  width: 1600px;
 }
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 50px;
+}
+.card__container {
+  padding: 30px 0px 30px 0px;
+}
+
 .card {
   font-size: 16px;
   line-height: 1.19;
@@ -196,14 +247,22 @@ button:active {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.card:not(:last-child) {
+  margin-right: 30px;
+}
 .card__title {
   font-weight: 500;
+  font-size: 16px;
+  margin-block-start: 0px;
+  margin-block-end: 10px;
 }
 .card__subtitle {
   color: var(--brand-color1);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 .container {
-  width: 1600px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;

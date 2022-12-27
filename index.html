@@ -22,12 +22,14 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container">
         <nav class="header__nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="header__logo">Studio</span></a
-          >
+          <div class="logo__container">
+            <a class="logo link" href="./index.html"
+              >Web<span class="header__logo">Studio</span></a
+            >
+          </div>
           <ul class="header__menu">
             <li>
               <a class="link header__menu-item" href="agencja">Agencja</a>
@@ -56,11 +58,12 @@
             >
           </li>
         </ul>
-      </header>
-    </div>
-    <div class="container">
-      <main>
-        <section class="banner">
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section banner">
           <h1 class="banner__title">
             efektywne rozwiązania <br />
             dla waszego biznesu
@@ -68,7 +71,7 @@
           <button class="banner__btn" type="button">Zamów usługę</button>
         </section>
 
-        <section>
+        <section class="section">
           <ul class="advantages">
             <li class="advantage">
               <h3 class="advantage__title">lorem ipsum</h3>
@@ -101,7 +104,7 @@
           </ul>
         </section>
 
-        <section>
+        <section class="section offices__container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="offices">
             <li class="office">
@@ -131,7 +134,7 @@
           </ul>
         </section>
 
-        <section class="section__cards">
+        <section class="section section__cards">
           <h2 class="section__header">Nasz zespół</h2>
           <ul class="cards">
             <li class="card">
@@ -141,8 +144,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="card__title">John Doe</h3>
-              <p class="card__subtitle">Product Designer</p>
+              <div class="card__container">
+                <h3 class="card__title">John Doe</h3>
+                <p class="card__subtitle">Product Designer</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -151,8 +156,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="card__title">John Doe</h3>
-              <p class="card__subtitle">Frontend Developer</p>
+              <div class="card__container">
+                <h3 class="card__title">John Doe</h3>
+                <p class="card__subtitle">Frontend Developer</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -161,8 +168,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="card__title">John Doe</h3>
-              <p class="card__subtitle">Marketing</p>
+              <div class="card__container">
+                <h3 class="card__title">John Doe</h3>
+                <p class="card__subtitle">Marketing</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -171,15 +180,18 @@
                 width="270"
                 height="260"
               />
-              <h3 class="card__title">John Doe</h3>
-              <p class="card__subtitle">UI Designer</p>
+              <div class="card__container">
+                <h3 class="card__title">John Doe</h3>
+                <p class="card__subtitle">UI Designer</p>
+              </div>
             </li>
           </ul>
         </section>
-      </main>
-    </div>
-    <div class="container">
-      <footer class="footer__background">
+      </div>
+    </main>
+
+    <footer class="footer__background">
+      <div class="container">
         <a class="logo link" href="WebStudio"
           >Web<span class="footer__logo">Studio</span></a
         >
@@ -204,7 +216,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
