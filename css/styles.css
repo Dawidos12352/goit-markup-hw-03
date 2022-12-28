@@ -177,6 +177,9 @@ button:active {
   align-items: flex-start;
   padding: 60px 0px 60px 15px;
 }
+.footer__container > a {
+  margin-bottom: 20px;
+}
 
 .footer__logo {
   color: var(--brand-color2);
