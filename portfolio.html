@@ -23,45 +23,50 @@
 
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <a class="logo link" href="./index.html"
-          >Web<span class="header__logo">Studio</span></a
-        >
-        <ul class="header__menu">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="logo__container">
+            <a class="logo link" href="./index.html"
+              >Web<span class="header__logo">Studio</span></a
+            >
+          </div>
+          <ul class="header__menu">
+            <li>
+              <a class="link header__menu-item" href="agencja">Agencja</a>
+            </li>
+            <li>
+              <a class="link header__menu-item" href="./portfolio.html"
+                >Porfolio</a
+              >
+            </li>
+            <li>
+              <a class="link header__menu-item" href="kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__contacts">
           <li>
-            <a class="link header__menu-item" href="agencja">Agencja</a>
-          </li>
-          <li>
-            <a class="link header__menu-item" href="./portfolio.html"
-              >Porfolio</a
+            <a
+              class="link header__contacts-item"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link header__menu-item" href="kontakt">Kontakt</a>
+            <a class="link header__contacts-item" href="tel:48111111111"
+              >+48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header__contacts">
-        <li>
-          <a class="link header__contacts-item" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="link header__contacts-item" href="tel:48111111111"
-            >+48 111 111 111</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
-
-    <main>
+    <main class="gallery__container">
       <ul class="menu__btn">
-        <li><button type="button">Wszystkie</button></li>
-        <li><button type="button">Strony</button></li>
-        <li><button type="button">Aplikacje</button></li>
-        <li><button type="button">Dizajn</button></li>
-        <li><button type="button">Marketing</button></li>
+        <li class="menu__btn-item"><button type="button">Wszystkie</button></li>
+        <li class="menu__btn-item"><button type="button">Strony</button></li>
+        <li class="menu__btn-item"><button type="button">Aplikacje</button></li>
+        <li class="menu__btn-item"><button type="button">Dizajn</button></li>
+        <li class="menu__btn-item"><button type="button">Marketing</button></li>
       </ul>
       <ul class="gallery">
         <li class="gallery__product">
@@ -71,8 +76,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Technocrack</h3>
-          <p class="product__description">Strona internetowa</p>
+          <div class="product__box">
+            <h3 class="product__name">Technocrack</h3>
+            <p class="product__description">Strona internetowa</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -81,8 +88,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Grafika New Orlean vs Golden Star</h3>
-          <p class="product__description">Dizajn</p>
+          <div class="product__box">
+            <h3 class="product__name">Grafika New Orlean vs Golden Star</h3>
+            <p class="product__description">Dizajn</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -91,8 +100,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Restauracja Seafood</h3>
-          <p class="product__description">Aplikacja</p>
+          <div class="product__box">
+            <h3 class="product__name">Restauracja Seafood</h3>
+            <p class="product__description">Aplikacja</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -101,8 +112,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Projekt Prime</h3>
-          <p class="product__description">Marketing</p>
+          <div class="product__box">
+            <h3 class="product__name">Projekt Prime</h3>
+            <p class="product__description">Marketing</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -111,8 +124,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Projekt Boxes</h3>
-          <p class="product__description">Aplikacja</p>
+          <div class="product__box">
+            <h3 class="product__name">Projekt Boxes</h3>
+            <p class="product__description">Aplikacja</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -121,8 +136,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Inspiration has no Borders</h3>
-          <p class="product__description">Strona internetowa</p>
+          <div class="product__box">
+            <h3 class="product__name">Inspiration has no Borders</h3>
+            <p class="product__description">Strona internetowa</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -131,8 +148,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Magazyn Limited Edition</h3>
-          <p class="product__description">Dizajn</p>
+          <div class="product__box">
+            <h3 class="product__name">Magazyn Limited Edition</h3>
+            <p class="product__description">Dizajn</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -141,8 +160,10 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Projekt LAB</h3>
-          <p class="product__description">Marketing</p>
+          <div class="product__box">
+            <h3 class="product__name">Projekt LAB</h3>
+            <p class="product__description">Marketing</p>
+          </div>
         </li>
         <li class="gallery__product">
           <img
@@ -151,37 +172,41 @@
             width="370"
             height="294"
           />
-          <h3 class="product__name">Growing Business</h3>
-          <p class="product__description">Aplikacja</p>
+          <div class="product__box">
+            <h3 class="product__name">Growing Business</h3>
+            <p class="product__description">Aplikacja</p>
+          </div>
         </li>
       </ul>
     </main>
 
     <footer class="footer__background">
-      <a class="logo link" href="WebStudio"
-        >Web<span class="footer__logo">Studio</span></a
-      >
-      <address>
-        <ul class="footer__adressess">
-          <li>
-            <a
-              class="link footer__place"
-              href="https://goo.gl/maps/jp3QV2B9B6zz9JZ26"
-              >m. Warszawa, Aleje Jerozolimskie 21</a
-            >
-          </li>
-          <li>
-            <a class="link footer__address" href=" mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="link footer__address" href="tel:48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="footer__container">
+        <a class="logo link" href="WebStudio"
+          >Web<span class="footer__logo">Studio</span></a
+        >
+        <address>
+          <ul class="footer__adressess">
+            <li>
+              <a
+                class="link footer__place"
+                href="https://goo.gl/maps/jp3QV2B9B6zz9JZ26"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li>
+              <a class="link footer__address" href=" mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="link footer__address" href="tel:48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
